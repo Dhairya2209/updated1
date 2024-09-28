@@ -589,10 +589,12 @@ const UploadDocument = () => {
               {/* <option>Identification Card</option> */}
               {/* <option>Experience Certificate</option> */}
               <option>Aadhar Card</option>
+              <option>PAN Card</option>
+              <option>driving license</option>
             </select>
           </div>
 
-          <div>
+          {/* <div>
             <label htmlFor="documentFile" className="block text-gray-700 text-sm font-semibold mb-2">
               <FaFileUpload className="inline-block text-blue-500 mr-2" /> Upload File
             </label>
@@ -603,7 +605,23 @@ const UploadDocument = () => {
               onChange={(e) => setDocumentFile(e.target.files[0])}
               required
             />
-          </div>
+          </div> */}
+
+<div>
+  <label htmlFor="documentFile" className="block text-gray-700 text-sm font-semibold mb-2">
+    <FaFileUpload className="inline-block text-blue-500 mr-2" /> Upload File
+  </label>
+  <input
+    type="file"
+    className="block w-full text-sm text-black file:mr-4 file:py-1 file:px-3 file:rounded-sm file:border file:border-black file:text-sm file:font-semibold file:bg-gray-200 file:text-black hover:file:bg-gray-300 transition-all file:shadow-none"
+    id="documentFile"
+    onChange={(e) => setDocumentFile(e.target.files[0])}
+    required
+  />
+</div>
+
+
+
 
           <motion.button 
             type="submit"

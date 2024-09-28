@@ -83,8 +83,8 @@ import { motion } from 'framer-motion';
 const Profile = () => {
   // Sample user data (replace with dynamic data as needed)
   const user = {
-    name: 'John Doe',
-    email: 'john.doe@example.com',
+    name: 'Admin',
+    email: 'xyz@example.com',
     profilePicture: 'https://icons8.com/l/3d/images/2_thumb_up_man_1.webp', // Replace with actual profile picture URL
   };
 
